@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".RTCActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Rover Details Section -->
+        <TextView
+            android:id="@+id/detailsRoverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/detailsRoverStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/detailsRoverPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/addMarkerButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add New Markers"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Submit Markers"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear Markers"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+
+
+        <!-- OSM Map -->
+        <org.osmdroid.views.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp" />
+
+
+        <!-- Rover's Screen Stream -->
+        <FrameLayout
+            android:layout_width="365dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp">
+
+            <org.webrtc.SurfaceViewRenderer
+                android:id="@+id/remote_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.example.userdevice.OverlayView
+                android:id="@+id/overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:translationZ="5dp" />
+
+            <!-- Inference Time Display -->
+            <TextView
+                android:id="@+id/inferenceTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_margin="16dp"
+                tools:text="100ms"
+                android:background="@drawable/inference_time_bg"
+                android:padding="8dp"
+                android:elevation="6dp" />
+        </FrameLayout>
+
+
+        <!-- Button Layout below camera feed -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#87d5e1"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp">
+
+            <!-- Top row: Switch button on the left -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/switchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Switch to Manual"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+                <!-- Spacer to push "Switch" to the left only -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- Up button centered -->
+            <Button
+                android:id="@+id/front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <!-- Row with Left, Back, Right -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Left"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/stop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stop"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+
+                <Button
+                    android:id="@+id/right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Right"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Up button centered -->
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

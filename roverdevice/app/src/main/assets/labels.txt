@@ -1,0 +1,9 @@
+Bacterial-Leaf-Blight
+Fungal-Leaf-Spot
+Lack-of-Calcium
+Leaf-Spot
+Yellow-Leaf-Curl-Virus
+Yellow-Vein-Mosaic-Virus
+Healthy
+Leaf-Spot
+Powdery-Mildew

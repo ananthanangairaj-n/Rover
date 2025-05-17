@@ -1,0 +1,182 @@
+{
+  "project_info": {
+    "project_number": "706742760990",
+    "firebase_url": "https://rovertracker-271a6-default-rtdb.firebaseio.com",
+    "project_id": "rovertracker-271a6",
+    "storage_bucket": "rovertracker-271a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:89bcb68d97988f7f4e200f",
+        "android_client_info": {
+          "package_name": "com.example.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:9837d9d7f40825484e200f",
+        "android_client_info": {
+          "package_name": "com.example.adminuser"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:62cdd6cb812704454e200f",
+        "android_client_info": {
+          "package_name": "com.example.agrover"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:fed23e618d6aa4034e200f",
+        "android_client_info": {
+          "package_name": "com.example.gps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:58873619d31bc3504e200f",
+        "android_client_info": {
+          "package_name": "com.example.mygps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:d36ec8dc58972d6c4e200f",
+        "android_client_info": {
+          "package_name": "com.example.rover"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:6641cda9a8fd2a164e200f",
+        "android_client_info": {
+          "package_name": "com.example.roverdevice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:73e47f5624387c054e200f",
+        "android_client_info": {
+          "package_name": "com.example.rovertracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706742760990:android:0178c363170440994e200f",
+        "android_client_info": {
+          "package_name": "com.example.userdevice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPjckfNj2zHn4Zz9Ixo9YSmrfPgHIg2VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
